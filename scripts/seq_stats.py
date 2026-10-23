@@ -8,6 +8,7 @@ print(seqs_lenght)
 print(max(seqs_lenght))
 print(min(seqs_lenght))
 print(sum(seqs_lenght)/len(sequences))
+print(max(sequences))
 names = gene[0]
 chrom = gene[1]
 start = gene[2]
