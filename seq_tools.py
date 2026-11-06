@@ -1,0 +1,11 @@
+seq = "ATCGATCGATGCGCGATGCATATATGCGATCGATCGAATATGCATATA"
+seql = len(seq)
+g_count = seq.count("G")
+c_count = seq.count("C")
+gc = round(((g_count + c_count)/seql)*100, 1)
+print(seql)
+print("GC:", gc, "%")
+print(seq[0:3], seq[:-3])
+print(seq.replace("T","U"))
+print(seq[::-1])
+print(bool(seq[0:3] == "ATG"))
