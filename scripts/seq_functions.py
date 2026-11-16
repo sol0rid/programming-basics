@@ -6,7 +6,7 @@ def reverse_complement(seq):
     return seq[::-1]
 
 def is_usable(seq, min_lenght = 30):
-    if len(seq) >= min_lenght and seq.find("N") == -1:
+    if len(seq) >= min_lenght and "N" not in seq:
         return True
     else: 
         return False
@@ -19,3 +19,6 @@ print(gc_content(seq3))
 print(reverse_complement(seq3))
 print(is_usable(seq3))
 
+def first_atg(seq):
+    return seq.find("N")
+    
